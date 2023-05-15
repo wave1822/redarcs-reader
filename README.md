@@ -12,4 +12,4 @@ How to use!
 
 4 It now should be new file caled subredditfile.html in the same folder as the script
 
-5 open the subredditfile.html file on your werbroser.
+5 open the subredditfile.html file on your web broser.
