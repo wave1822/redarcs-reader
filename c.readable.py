@@ -1,6 +1,6 @@
 import sys
 import os
-from datetime import datetime, date
+from datetime import datetime
 import json
 import html
 
@@ -21,8 +21,6 @@ def format_json(input_file, output_file):
                 body = json_data.get("body")
                 link_id = json_data.get("link_id")
 
-                formatted_link_id = f"https://reddit.com/r/{json_data['subreddit']}/comments/{link_id}"
-
                 formatted_json = {
                     "author": author,
                     "created_utc": created_utc,
@@ -35,6 +33,7 @@ def format_json(input_file, output_file):
                 if link_id not in json_objects:
                     json_objects[link_id] = []
                 json_objects[link_id].append(formatted_json)
+
             except json.JSONDecodeError:
                 # Ignore lines that do not contain valid JSON
                 pass
@@ -57,6 +56,7 @@ def format_json(input_file, output_file):
 
     # Iterate over the grouped JSON objects and add them to the HTML output
     for link_id, objects in json_objects.items():
+        formatted_link_id = f"https://reddit.com/r/{json_data['subreddit']}/comments/{link_id[3:]}"
         html_content += f'''
         <h2>Permalink: {formatted_link_id}</h2>
         <div>
