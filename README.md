@@ -1,3 +1,5 @@
+Edit this script on works on the submissions files maybe in future I do one for the comments!
+
 This script is made make the backups of the subreddits on the https://the-eye.eu/redarcs/ to be humam readable not just raw code!
 
 How to use!
