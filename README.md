@@ -2,9 +2,9 @@ This script is made make the backups of the subreddits on the https://the-eye.eu
 
 How to use!
 
-1 Extract the .zst file, on linux ark can extract it on mac or windows I don't know!
+1 Extract the .zst file, ps on linux ark can extract it on mac or windows I don't know!
 
-2 Open a terminal window on whorever you put this script
+2 Open a terminal window on whoever you put this script
 
 3 Run on the terminal python readable.py subredditfile
 
