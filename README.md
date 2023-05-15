@@ -2,7 +2,7 @@ This script is made make the backups of the subreddits on the https://the-eye.eu
 
 How to use!
 
-The script readable.py is for submission and the script c.readable.py is for comments
+The script readable.py is for submissions and the script c.readable.py is for comments
 
 1 Extract the .zst file, ps on linux ark can extract it on mac or windows I don't know!
 
