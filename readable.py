@@ -21,7 +21,7 @@ def main(filename):
         title = post['title']
         author = post['author']
         permalink = f"https://reddit.com{post['permalink']}"
-        created_utc = post['created_utc']
+        created_utc = int(post['created_utc'])  # Convert to integer
         created_date = datetime.utcfromtimestamp(created_utc).strftime('%d/%m/%Y')
         selftext = post['selftext']
         selftext = html.unescape(selftext).replace('&#x200B;', '')
