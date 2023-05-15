@@ -1,8 +1,8 @@
-Edit this script on works on the submissions files maybe in future I do one for the comments!
-
 This script is made make the backups of the subreddits on the https://the-eye.eu/redarcs/ to be humam readable not just raw code!
 
 How to use!
+
+The script readable.py is for submission and the script c.readable.py is for comments
 
 1 Extract the .zst file, ps on linux ark can extract it on mac or windows I don't know!
 
